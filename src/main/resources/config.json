@@ -1,0 +1,26 @@
+{
+  "port": 8000,
+  "httpRoot": "www",
+  "indexPage": "index.html",
+  "errorPages": {
+    "403": "errors/403.html",
+    "404": "errors/404.html",
+    "500": "errors/500.html"
+  },
+  "hosts": {
+    "a.com": {
+      "HTTP_ROOT": "www/a"
+    },
+    "b.com": {
+      "HTTP_ROOT": "www/b"
+    },
+    "c.com": {
+      "HTTP_ROOT": "www/aa/bb"
+    }
+  },
+  "servlet": {
+    "/Greeting": "Hello",
+    "/super.Greeting": "service.Hello",
+    "/time": "CurrentTimeServlet"
+  }
+}
